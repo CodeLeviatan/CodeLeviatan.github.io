@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | CodeLeviatan</title>
+  <title>Android:基础 | CodeLeviatan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CodeLeviatan">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="Andriod系统架构1.Linux内核层 android是基于Linux内核的，这一层为android设备提供了底层的驱动，如显示驱动，音频驱动，照相机驱动等等2.系统运行库层 这一层通过一些C/C++库来为Android设备的硬件提供了主要的特性支持。如为SQLite库提供了数据库支持，Webkit提供了浏览器内核支持等 Android运行时库也在这一层，它主要提供一些核心库，能允许开发者使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android:基础">
+<meta property="og:url" content="http://yoursite.com/2019/07/27/Android-基础-0/index.html">
 <meta property="og:site_name" content="CodeLeviatan">
+<meta property="og:description" content="Andriod系统架构1.Linux内核层 android是基于Linux内核的，这一层为android设备提供了底层的驱动，如显示驱动，音频驱动，照相机驱动等等2.系统运行库层 这一层通过一些C/C++库来为Android设备的硬件提供了主要的特性支持。如为SQLite库提供了数据库支持，Webkit提供了浏览器内核支持等 Android运行时库也在这一层，它主要提供一些核心库，能允许开发者使用">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-27T06:17:56.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CodeLeviatan">
+<meta name="twitter:title" content="Android:基础">
+<meta name="twitter:description" content="Andriod系统架构1.Linux内核层 android是基于Linux内核的，这一层为android设备提供了底层的驱动，如显示驱动，音频驱动，照相机驱动等等2.系统运行库层 这一层通过一些C/C++库来为Android设备的硬件提供了主要的特性支持。如为SQLite库提供了数据库支持，Webkit提供了浏览器内核支持等 Android运行时库也在这一层，它主要提供一些核心库，能允许开发者使用">
   
     <link rel="alternative" href="/atom.xml" title="CodeLeviatan" type="application/atom+xml">
   
@@ -150,103 +154,221 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Android-基础-0" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Android:基础
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/27/Android-基础-0/" class="archive-article-date">
+
+        
+        <a href="/2019/07/27/Android-基础-0/" class="archive-article-date">
   	<time datetime="2019-07-27T06:14:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/27/Android-基础-0/">Android:基础</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Andriod系统架构"><a href="#Andriod系统架构" class="headerlink" title="Andriod系统架构"></a>Andriod系统架构</h1><h2 id="1-Linux内核层"><a href="#1-Linux内核层" class="headerlink" title="1.Linux内核层"></a>1.Linux内核层</h2><ul>
+<li>android是基于Linux内核的，这一层为android设备提供了底层的驱动，如显示驱动，音频驱动，照相机驱动等等<h2 id="2-系统运行库层"><a href="#2-系统运行库层" class="headerlink" title="2.系统运行库层"></a>2.系统运行库层</h2></li>
+<li>这一层通过一些C/C++库来为Android设备的硬件提供了主要的特性支持。如为SQLite库提供了数据库支持，Webkit提供了浏览器内核支持等</li>
+<li>Android运行时库也在这一层，它主要提供一些核心库，能允许开发者使用JAVA语言来编写Android应用<a id="more"></a>
+<h2 id="3-应用框架层"><a href="#3-应用框架层" class="headerlink" title="3.应用框架层"></a>3.应用框架层</h2></li>
+<li>这一层主要提供构建应用程序时可能用到的各种API，Andriod自带的一些核心应用就是使用这些API完成的<h2 id="4-应用层"><a href="#4-应用层" class="headerlink" title="4.应用层"></a>4.应用层</h2></li>
+<li>所有安装在手机上的应用程序都是属于这一层的</li>
+</ul>
+<hr>
+<h1 id="Android的开发特色"><a href="#Android的开发特色" class="headerlink" title="Android的开发特色"></a>Android的开发特色</h1><h2 id="1-四大组件"><a href="#1-四大组件" class="headerlink" title="1.四大组件"></a>1.四大组件</h2><ul>
+<li>活动（activity）</li>
+<li>服务（service）</li>
+<li>广播接收器（Broadcast Receiver）</li>
+<li>内容提供器（Content Prvider）<h2 id="2-丰富的系统控件"><a href="#2-丰富的系统控件" class="headerlink" title="2.丰富的系统控件"></a>2.丰富的系统控件</h2></li>
+<li>Android为开发者提供了丰富的系统控件，同时也可以定义自己的控件<h2 id="3-SQLite数据库"><a href="#3-SQLite数据库" class="headerlink" title="3.SQLite数据库"></a>3.SQLite数据库</h2></li>
+<li>Android自带了这种轻量级，运行速度极快的嵌入式关系型数据库，不仅支持SQL语法，还可以通过Android封装好的API进行操作<h2 id="4-强大的多媒体"><a href="#4-强大的多媒体" class="headerlink" title="4.强大的多媒体"></a>4.强大的多媒体</h2></li>
+<li>Android自带了丰富的多媒体服务，如音乐，视频，录音，拍照等<h2 id="5-地理位置定位"><a href="#5-地理位置定位" class="headerlink" title="5.地理位置定位"></a>5.地理位置定位</h2></li>
+</ul>
+<h1 id="Android开发的工具"><a href="#Android开发的工具" class="headerlink" title="Android开发的工具"></a>Android开发的工具</h1><h2 id="1-JDK"><a href="#1-JDK" class="headerlink" title="1.JDK"></a>1.JDK</h2><h2 id="2-SDK"><a href="#2-SDK" class="headerlink" title="2.SDK"></a>2.SDK</h2><h2 id="3-AndroidStudio"><a href="#3-AndroidStudio" class="headerlink" title="3. AndroidStudio"></a>3. AndroidStudio</h2><h2 id="注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK"><a href="#注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK" class="headerlink" title="注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK"></a>注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK</h2><hr>
+<h1 id="分析Android程序"><a href="#分析Android程序" class="headerlink" title="分析Android程序"></a>分析Android程序</h1><h2 id="1-gradle和-idea"><a href="#1-gradle和-idea" class="headerlink" title="1. .gradle和.idea"></a>1. .gradle和.idea</h2><ul>
+<li>这两个目录下放置的都是AndroidStudio自动生成的文件，无需关心，也不要去手动编辑<h2 id="2-app"><a href="#2-app" class="headerlink" title="2.app"></a>2.app</h2></li>
+<li>项目中的代码，资源等内容，几乎都是放置在这个目录下的，我们开发工作，也基本是在这个目录下进行的<h2 id="3-build"><a href="#3-build" class="headerlink" title="3.build"></a>3.build</h2></li>
+<li>这个目录也无需关心，它主要包含一些在编译时自动生成的文件<h2 id="4-gradle"><a href="#4-gradle" class="headerlink" title="4.gradle"></a>4.gradle</h2></li>
+<li>这个目录下包含了gradle wrapper的配置文件，使用gradle wrapper 的方式不需要提前下载，而是要根据本地缓存情况来决定<h2 id="5-gitgnore"><a href="#5-gitgnore" class="headerlink" title="5. .gitgnore"></a>5. .gitgnore</h2></li>
+<li>这个文件是用来将制定的目录或者文件排除在版本控制外的<h2 id="6-build-gradle"><a href="#6-build-gradle" class="headerlink" title="6. build.gradle"></a>6. build.gradle</h2></li>
+<li>这是一个全局的gradle构建脚本，通常这个文件是不需要修改的<h2 id="7-gradle-properties"><a href="#7-gradle-properties" class="headerlink" title="7.gradle.properties"></a>7.gradle.properties</h2></li>
+<li>这个文件是全局的gradle配置文件，这里面的属性将会影响项目中所有的gradle编译脚本<h2 id="8-gradlew和gradlew-bat"><a href="#8-gradlew和gradlew-bat" class="headerlink" title="8.gradlew和gradlew.bat"></a>8.gradlew和gradlew.bat</h2></li>
+<li>这两个是在命令行界面执行gradle命令的，其中前者实在MAC或者Linux中使用的，后者则是在Win下使用的<h2 id="9-xxx-iml"><a href="#9-xxx-iml" class="headerlink" title="9.xxx.iml"></a>9.xxx.iml</h2></li>
+<li>iml文件是所有的IntelliJ IDEA项目都会自动生成的一个文件没用于标识这是一个IntelliJ IDEA的项目，我们不需要修改这里面的任何内容<h2 id="10-local-properties"><a href="#10-local-properties" class="headerlink" title="10.local.properties"></a>10.local.properties</h2></li>
+<li>这个文件适用于指示本机中SDK路径的，一般不需要改动<h2 id="11-setting-gradle"><a href="#11-setting-gradle" class="headerlink" title="11.setting.gradle"></a>11.setting.gradle</h2></li>
+<li>这两个文件，用于指定项目中所有引入的模块，通常模块的引用都是自动的<h2 id="app目录下的子文件"><a href="#app目录下的子文件" class="headerlink" title="app目录下的子文件"></a>app目录下的子文件</h2><h3 id="1-build"><a href="#1-build" class="headerlink" title="1.build"></a>1.build</h3></li>
+<li>这个目录和外层的build目录类似，主要也是在编译时自动生成的文件，不过它更加复杂，我们无需关心<h3 id="2-lib"><a href="#2-lib" class="headerlink" title="2.lib"></a>2.lib</h3></li>
+<li>如果你的项目中使用到了第三方的jar包，就需要把这些jar包都放在lib目录下，放在这个目录下的jar包都会被自动添加到构建路径<h3 id="3-androidTest"><a href="#3-androidTest" class="headerlink" title="3.androidTest"></a>3.androidTest</h3></li>
+<li>此处是用来编写测试类示例的，可以对项目进行一些自动化测试<h3 id="4-java"><a href="#4-java" class="headerlink" title="4.java"></a>4.java</h3></li>
+<li>java目录是存放java代码的地方，活动文件都会在此目录下<h3 id="5-res"><a href="#5-res" class="headerlink" title="5.res"></a>5.res</h3></li>
+<li>所有在项目中使用的素材，布局等等都会存放在这个目录下</li>
+<li>图片存放在drawable中，布局存放在layout中，字符串存放在values下<h3 id="6-AndroidManifest-xml"><a href="#6-AndroidManifest-xml" class="headerlink" title="6.AndroidManifest.xml"></a>6.AndroidManifest.xml</h3></li>
+<li>这是整个Android项目的配置文件，在程序中定义的四大组件都需要在这里进行注册，另外还可以在这里给应用程序添加权限声明<h3 id="7-test"><a href="#7-test" class="headerlink" title="7.test"></a>7.test</h3></li>
+<li>此处时用力啊编写Unit Test测试用的，是对项目进行自动化测试的一种方式<h3 id="8-gitgnore"><a href="#8-gitgnore" class="headerlink" title="8. .gitgnore"></a>8. .gitgnore</h3></li>
+<li>这个文件将app模块内指定的目录或者文件排除在版本控制外，作用和外层的相似<h3 id="9-app-iml"><a href="#9-app-iml" class="headerlink" title="9.app.iml"></a>9.app.iml</h3></li>
+<li>IDEA生成的文件，不需要关心和修改<h3 id="10-build-grdle"><a href="#10-build-grdle" class="headerlink" title="10.build.grdle"></a>10.build.grdle</h3></li>
+<li>这是app模块的gradle构建脚本，这个文件会制定很多项目的构建相关的配置<h3 id="11-proguard-rules-pro"><a href="#11-proguard-rules-pro" class="headerlink" title="11.proguard- rules.pro"></a>11.proguard- rules.pro</h3></li>
+<li>这个文件用于指定项目代码中的混淆规则，当代码开发完成打包成安装包文件，如果不希望被别人破解，通常会将代码进行混淆</li>
+</ul>
+<hr>
+<h1 id="Android的日志工具"><a href="#Android的日志工具" class="headerlink" title="Android的日志工具"></a>Android的日志工具</h1><h2 id="1-Log-v"><a href="#1-Log-v" class="headerlink" title="1.Log.v()"></a>1.Log.v()</h2><ul>
+<li>用于打印那些最为琐碎的，意义最小的日志信息。对应级别时verbose，时Android日志里级别最低的一种<h2 id="2-Log-d"><a href="#2-Log-d" class="headerlink" title="2.Log.d()"></a>2.Log.d()</h2></li>
+<li>用于打印一些调试信息，这些信息对你调试程序和分析问题是有帮助的，对应级别时debug，比verbose高级<h2 id="3-Log-i"><a href="#3-Log-i" class="headerlink" title="3.Log.i()"></a>3.Log.i()</h2></li>
+<li>用于打印一些比较重要的数据，这些数据应该是你想看到的，可以帮助你分析用户行为的数据。对应的级别为info，比debug高一级<h2 id="4-Log-w"><a href="#4-Log-w" class="headerlink" title="4.Log.w()"></a>4.Log.w()</h2></li>
+<li>用于打印那些警告信息，对应级别为warn<h2 id="5-Log-e"><a href="#5-Log-e" class="headerlink" title="5.Log.e()"></a>5.Log.e()</h2></li>
+<li>用于打印错误信息，对应级别为error</li>
+</ul>
+<hr>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/27/Android-基础-0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/26/MyBlog/" class="archive-article-date">
-  	<time datetime="2019-07-26T02:52:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/26/MyBlog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MyBlog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/26/MyBlog/">MyBlog</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Andriod系统架构"><span class="toc-number">1.</span> <span class="toc-text">Andriod系统架构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Linux内核层"><span class="toc-number">1.1.</span> <span class="toc-text">1.Linux内核层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-系统运行库层"><span class="toc-number">1.2.</span> <span class="toc-text">2.系统运行库层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-应用框架层"><span class="toc-number">1.3.</span> <span class="toc-text">3.应用框架层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-应用层"><span class="toc-number">1.4.</span> <span class="toc-text">4.应用层</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android的开发特色"><span class="toc-number">2.</span> <span class="toc-text">Android的开发特色</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-四大组件"><span class="toc-number">2.1.</span> <span class="toc-text">1.四大组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-丰富的系统控件"><span class="toc-number">2.2.</span> <span class="toc-text">2.丰富的系统控件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-SQLite数据库"><span class="toc-number">2.3.</span> <span class="toc-text">3.SQLite数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-强大的多媒体"><span class="toc-number">2.4.</span> <span class="toc-text">4.强大的多媒体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-地理位置定位"><span class="toc-number">2.5.</span> <span class="toc-text">5.地理位置定位</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android开发的工具"><span class="toc-number">3.</span> <span class="toc-text">Android开发的工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-JDK"><span class="toc-number">3.1.</span> <span class="toc-text">1.JDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-SDK"><span class="toc-number">3.2.</span> <span class="toc-text">2.SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-AndroidStudio"><span class="toc-number">3.3.</span> <span class="toc-text">3. AndroidStudio</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK"><span class="toc-number">3.4.</span> <span class="toc-text">注意：安装AndroidStudio后如果在系统中没有SDK，AndroidStudio会自动安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分析Android程序"><span class="toc-number">4.</span> <span class="toc-text">分析Android程序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-gradle和-idea"><span class="toc-number">4.1.</span> <span class="toc-text">1. .gradle和.idea</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-app"><span class="toc-number">4.2.</span> <span class="toc-text">2.app</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-build"><span class="toc-number">4.3.</span> <span class="toc-text">3.build</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-gradle"><span class="toc-number">4.4.</span> <span class="toc-text">4.gradle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-gitgnore"><span class="toc-number">4.5.</span> <span class="toc-text">5. .gitgnore</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-build-gradle"><span class="toc-number">4.6.</span> <span class="toc-text">6. build.gradle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-gradle-properties"><span class="toc-number">4.7.</span> <span class="toc-text">7.gradle.properties</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-gradlew和gradlew-bat"><span class="toc-number">4.8.</span> <span class="toc-text">8.gradlew和gradlew.bat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-xxx-iml"><span class="toc-number">4.9.</span> <span class="toc-text">9.xxx.iml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-local-properties"><span class="toc-number">4.10.</span> <span class="toc-text">10.local.properties</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-setting-gradle"><span class="toc-number">4.11.</span> <span class="toc-text">11.setting.gradle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app目录下的子文件"><span class="toc-number">4.12.</span> <span class="toc-text">app目录下的子文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-build"><span class="toc-number">4.12.1.</span> <span class="toc-text">1.build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-lib"><span class="toc-number">4.12.2.</span> <span class="toc-text">2.lib</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-androidTest"><span class="toc-number">4.12.3.</span> <span class="toc-text">3.androidTest</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-java"><span class="toc-number">4.12.4.</span> <span class="toc-text">4.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-res"><span class="toc-number">4.12.5.</span> <span class="toc-text">5.res</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-AndroidManifest-xml"><span class="toc-number">4.12.6.</span> <span class="toc-text">6.AndroidManifest.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-test"><span class="toc-number">4.12.7.</span> <span class="toc-text">7.test</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-gitgnore"><span class="toc-number">4.12.8.</span> <span class="toc-text">8. .gitgnore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-app-iml"><span class="toc-number">4.12.9.</span> <span class="toc-text">9.app.iml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-build-grdle"><span class="toc-number">4.12.10.</span> <span class="toc-text">10.build.grdle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-proguard-rules-pro"><span class="toc-number">4.12.11.</span> <span class="toc-text">11.proguard- rules.pro</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android的日志工具"><span class="toc-number">5.</span> <span class="toc-text">Android的日志工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Log-v"><span class="toc-number">5.1.</span> <span class="toc-text">1.Log.v()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Log-d"><span class="toc-number">5.2.</span> <span class="toc-text">2.Log.d()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Log-i"><span class="toc-number">5.3.</span> <span class="toc-text">3.Log.i()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Log-w"><span class="toc-number">5.4.</span> <span class="toc-text">4.Log.w()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Log-e"><span class="toc-number">5.5.</span> <span class="toc-text">5.Log.e()</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/26/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-26T02:44:06.704Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/26/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -269,8 +391,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
