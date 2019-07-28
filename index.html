@@ -173,94 +173,46 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="常用的控件使用方法"><a href="#常用的控件使用方法" class="headerlink" title="常用的控件使用方法"></a>常用的控件使用方法</h1><h2 id="1-TextView"><a href="#1-TextView" class="headerlink" title="1.TextView"></a>1.TextView</h2><p>TextView可以说是Android中最简单的控件，它主要用于显示界面的一些信息</p>
-<pre><code>&lt;TextView
-    android:id=&quot;@+id/text_view&quot;
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:gravity=&quot;center&quot;
-    android:textSize=&quot;24sp&quot;
-    android:textColor=&quot;#00ff11&quot;
-    android:text=&quot;This is textview&quot; /&gt;</code></pre><ul>
-<li><p>使用 android:id=”@+id/text_view”来定义一个唯一的标识符， </p>
-</li>
-<li><p>android:layout_width=”match_parent”，android:layout_height=”wrap_content”分别定义了控件的宽度和高度   </p>
-</li>
-<li><p>Android中所有的控件都有这两个属性。</p>
-</li>
-<li><p>宽度和高度的可选值一共有三种：   match_parent，wrap_content和fill_present     </p>
-</li>
-<li><p>match_parent是让当前控件大小和父布局大小相同，而wrap_content是指让控件的大小刚好包含里面的内容</p>
-</li>
-<li><p>其中fill_present和match_present意义相同，但现在官方更加推荐使用match_present</p>
-</li>
-<li><p>android:gravity=”center” ：可以用来指定文字的对齐方式，这里的center即是居中、</p>
-</li>
-<li><p>android:textSize=”24sp”：  可以用来指定文字的大小</p>
-</li>
-<li><p>android:textColor=”#00ff11” ：用于指定文字的颜色</p>
-<h2 id="2-Button"><a href="#2-Button" class="headerlink" title="2.Button"></a>2.Button</h2><p>Button是程序用于和用户交互的重要方式</p>
-<p>  &lt;Button</p>
-<pre><code>android:id=&quot;@+id/button&quot;
-android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;wrap_content&quot;
-android:text=&quot;Button&quot;
-android:textAllCaps=&quot;false&quot;
-/&gt;
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">android:id=&quot;@+id/text_view&quot;</span><br><span class="line">android:layout_width=&quot;match_parent&quot;</span><br><span class="line">android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">android:gravity=&quot;center&quot;</span><br><span class="line">android:textSize=&quot;24sp&quot;</span><br><span class="line">android:textColor=&quot;#00ff11&quot;</span><br><span class="line">android:text=&quot;This is textview&quot; /&gt;</span><br></pre></td></tr></table></figure>
 
-活动中对于Button的监听：</code></pre><p>   Button button=(Button) findViewById(R.id.button);</p>
-<pre><code>button.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-
-    }
-});</code></pre></li>
-<li><p>android:textAllCaps=”false”：关闭自动转换成大写</p>
-<h2 id="3-EditText"><a href="#3-EditText" class="headerlink" title="3.EditText"></a>3.EditText</h2><p>EditText允许用户在控件里输入和编辑内容，并可以在程序中进行处理</p>
-<p>   &lt;EditText</p>
-<pre><code>android:id=&quot;@+id/edit_text&quot;
-android:layout_height=&quot;wrap_content&quot;
-android:layout_width=&quot;match_parent&quot;
-android:hint=&quot;Type something here&quot;
-android:maxLines=&quot;2&quot;
-/&gt;</code></pre></li>
-<li><p>android:hint=”Type something here”：该属性制定了一段提示性的文本</p>
-</li>
-<li><p>android:maxLines=”2”：该属性制定了EditText最大行数是两行，超过两行时文本就会向上滑动</p>
-</li>
-<li><p>在java中，通过Sting s=edit_text.getText().toString()；来获取到文本框中的信息、</p>
-<h2 id="4-ImageView"><a href="#4-ImageView" class="headerlink" title="4.ImageView"></a>4.ImageView</h2><p>ImageView是用于在面板上展示图片的一个控件，使用这个控件需要提前将准本好的图片放到drawable目录中</p>
-<p>   &lt;ImageView</p>
-<pre><code>android:id=&quot;@+id/image_view&quot;
-android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;wrap_content&quot;
-android:src=&quot;@drawable/img_1&quot; /&gt;</code></pre></li>
-<li><p>android:src=”@drawable/img_1” /&gt;：指定图片显示</p>
-<h2 id="5-ProgressBar"><a href="#5-ProgressBar" class="headerlink" title="5.ProgressBar"></a>5.ProgressBar</h2><h4 id="ProgressBar用于在界面上添加一个进度条"><a href="#ProgressBar用于在界面上添加一个进度条" class="headerlink" title="ProgressBar用于在界面上添加一个进度条"></a>ProgressBar用于在界面上添加一个进度条</h4><p>  &lt;ProgressBar</p>
-<pre><code>android:id=&quot;@+id/progress_bar&quot;
-android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;wrap_content&quot; /&gt;</code></pre></li>
+<ul>
+<li>使用 android:id=”@+id/text_view”来定义一个唯一的标识符， </li>
+<li>android:layout_width=”match_parent”，android:layout_height=”wrap_content”分别定义了控件的宽度和高度   </li>
+<li>Android中所有的控件都有这两个属性。</li>
+<li>宽度和高度的可选值一共有三种：   match_parent，wrap_content和fill_present     </li>
+<li>match_parent是让当前控件大小和父布局大小相同，而wrap_content是指让控件的大小刚好包含里面的内容</li>
+<li>其中fill_present和match_present意义相同，但现在官方更加推荐使用match_present</li>
+<li>android:gravity=”center” ：可以用来指定文字的对齐方式，这里的center即是居中、</li>
+<li>android:textSize=”24sp”：  可以用来指定文字的大小</li>
+<li>android:textColor=”#00ff11” ：用于指定文字的颜色<h2 id="2-Button"><a href="#2-Button" class="headerlink" title="2.Button"></a>2.Button</h2>Button是程序用于和用户交互的重要方式</li>
 </ul>
-<h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><pre><code>public void onClick(View view) {
-            switch (view.getId()){
-                case R.id.button:
-                    if(progressBar.getVisibility()==View.GONE){
-                        progressBar.setVisibility(View.VISIBLE);
-                    }else {
-                        progressBar.setVisibility(View.GONE);
-                    }
-                    break;
-                 default:
-                     break;
-            }
-        }</code></pre><ul>
-<li><p>通过getVisbility来获取当前状态，setVisibility则可以修改当前状态</p>
-<h4 id="可以给进度条指定为不同的样式，例如水平进度条"><a href="#可以给进度条指定为不同的样式，例如水平进度条" class="headerlink" title="可以给进度条指定为不同的样式，例如水平进度条"></a>可以给进度条指定为不同的样式，例如水平进度条</h4><p>   &lt;ProgressBar</p>
-<pre><code>android:id=&quot;@+id/progress_bar&quot;
-android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;match_parent&quot;
-style=&quot;?android:attr/progressBarStyleHorizontal&quot;
-android:max=&quot;100&quot;
-/&gt;</code></pre></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> &lt;Button</span><br><span class="line">        android:id=&quot;@+id/button&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:text=&quot;Button&quot;</span><br><span class="line">        android:textAllCaps=&quot;false&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">```		</span><br><span class="line">		活动中对于Button的监听：</span><br><span class="line">```    </span><br><span class="line">	Button button=(Button) findViewById(R.id.button);</span><br><span class="line">        button.setOnClickListener(new View.OnClickListener() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void onClick(View view) &#123;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>android:textAllCaps=”false”：关闭自动转换成大写<h2 id="3-EditText"><a href="#3-EditText" class="headerlink" title="3.EditText"></a>3.EditText</h2>EditText允许用户在控件里输入和编辑内容，并可以在程序中进行处理</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;EditText</span><br><span class="line">        android:id=&quot;@+id/edit_text&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:hint=&quot;Type something here&quot;</span><br><span class="line">        android:maxLines=&quot;2&quot;</span><br><span class="line">        /&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>android:hint=”Type something here”：该属性制定了一段提示性的文本</li>
+<li>android:maxLines=”2”：该属性制定了EditText最大行数是两行，超过两行时文本就会向上滑动</li>
+<li>在java中，通过Sting s=edit_text.getText().toString()；来获取到文本框中的信息、<h2 id="4-ImageView"><a href="#4-ImageView" class="headerlink" title="4.ImageView"></a>4.ImageView</h2>ImageView是用于在面板上展示图片的一个控件，使用这个控件需要提前将准本好的图片放到drawable目录中</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line">        android:id=&quot;@+id/image_view&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:src=&quot;@drawable/img_1&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>android:src=”@drawable/img_1” /&gt;：指定图片显示<h2 id="5-ProgressBar"><a href="#5-ProgressBar" class="headerlink" title="5.ProgressBar"></a>5.ProgressBar</h2><h4 id="ProgressBar用于在界面上添加一个进度条"><a href="#ProgressBar用于在界面上添加一个进度条" class="headerlink" title="ProgressBar用于在界面上添加一个进度条"></a>ProgressBar用于在界面上添加一个进度条</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ProgressBar</span><br><span class="line">       android:id=&quot;@+id/progress_bar&quot;</span><br><span class="line">       android:layout_width=&quot;match_parent&quot;</span><br><span class="line">       android:layout_height=&quot;wrap_content&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public void onClick(View view) &#123;</span><br><span class="line">                switch (view.getId())&#123;</span><br><span class="line">                    case R.id.button:</span><br><span class="line">                        if(progressBar.getVisibility()==View.GONE)&#123;</span><br><span class="line">                            progressBar.setVisibility(View.VISIBLE);</span><br><span class="line">                        &#125;else &#123;</span><br><span class="line">                            progressBar.setVisibility(View.GONE);</span><br><span class="line">                        &#125;</span><br><span class="line">                        break;</span><br><span class="line">                     default:</span><br><span class="line">                         break;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>通过getVisbility来获取当前状态，setVisibility则可以修改当前状态<h4 id="可以给进度条指定为不同的样式，例如水平进度条"><a href="#可以给进度条指定为不同的样式，例如水平进度条" class="headerlink" title="可以给进度条指定为不同的样式，例如水平进度条"></a>可以给进度条指定为不同的样式，例如水平进度条</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;ProgressBar</span><br><span class="line">       android:id=&quot;@+id/progress_bar&quot;</span><br><span class="line">       android:layout_width=&quot;match_parent&quot;</span><br><span class="line">       android:layout_height=&quot;match_parent&quot;</span><br><span class="line">       style=&quot;?android:attr/progressBarStyleHorizontal&quot;</span><br><span class="line">       android:max=&quot;100&quot;</span><br><span class="line">       /&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 <h2 id="6-AlterDialog"><a href="#6-AlterDialog" class="headerlink" title="6.AlterDialog"></a>6.AlterDialog</h2><p>AlterDialog可以在当前界面弹出一个对话框，这个对话框是制定于所有界面元素之上的，能够屏蔽其他控件的交互能力，因此一般用于提示比较重要的信息<br>该组件不是在xml中定义的的，而是在活动中直接使用</p>
 <pre><code>public void onClick(View view) {
