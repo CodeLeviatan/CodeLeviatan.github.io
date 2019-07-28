@@ -238,19 +238,21 @@ android:src=&quot;@drawable/img_1&quot; /&gt;</code></pre></li>
 <h2 id="5-ProgressBar"><a href="#5-ProgressBar" class="headerlink" title="5.ProgressBar"></a>5.ProgressBar</h2><h4 id="ProgressBar用于在界面上添加一个进度条"><a href="#ProgressBar用于在界面上添加一个进度条" class="headerlink" title="ProgressBar用于在界面上添加一个进度条"></a>ProgressBar用于在界面上添加一个进度条</h4><p> &lt;ProgressBar</p>
 <pre><code>android:id=&quot;@+id/progress_bar&quot;
 android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;wrap_content&quot; /&gt;</code></pre><h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><p> public void onClick(View view) {</p>
-<pre><code>    switch (view.getId()){
-        case R.id.button:
-            if(progressBar.getVisibility()==View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }else {
-                progressBar.setVisibility(View.GONE);
+android:layout_height=&quot;wrap_content&quot; /&gt;</code></pre></li>
+</ul>
+<h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><pre><code>public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.button:
+                    if(progressBar.getVisibility()==View.GONE){
+                        progressBar.setVisibility(View.VISIBLE);
+                    }else {
+                        progressBar.setVisibility(View.GONE);
+                    }
+                    break;
+                 default:
+                     break;
             }
-            break;
-         default:
-             break;
-    }
-}</code></pre></li>
+        }</code></pre><ul>
 <li><p>通过getVisbility来获取当前状态，setVisibility则可以修改当前状态</p>
 <h4 id="可以给进度条指定为不同的样式，例如水平进度条"><a href="#可以给进度条指定为不同的样式，例如水平进度条" class="headerlink" title="可以给进度条指定为不同的样式，例如水平进度条"></a>可以给进度条指定为不同的样式，例如水平进度条</h4><p>  &lt;ProgressBar</p>
 <pre><code>android:id=&quot;@+id/progress_bar&quot;
@@ -365,68 +367,6 @@ android:max=&quot;100&quot;
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/07/27/Android-基础-0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-MyBlog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/26/MyBlog/">MyBlog</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/26/MyBlog/" class="archive-article-date">
-  	<time datetime="2019-07-26T02:52:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/26/MyBlog/">展开全文 >></a>
         </p>
       
 

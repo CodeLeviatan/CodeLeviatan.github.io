@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="CodeLeviatan">
 <meta property="og:description" content="常用的控件使用方法1.TextViewTextView可以说是Android中最简单的控件，它主要用于显示界面的一些信息 &amp;lt;TextView     android:id=&amp;quot;@+id/text_view&amp;quot;     android:layout_width=&amp;quot;match_parent&amp;quot;     android:layout_height=&amp;quot;wr">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-27T08:52:43.009Z">
+<meta property="og:updated_time" content="2019-07-28T01:00:43.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android:UI">
 <meta name="twitter:description" content="常用的控件使用方法1.TextViewTextView可以说是Android中最简单的控件，它主要用于显示界面的一些信息 &amp;lt;TextView     android:id=&amp;quot;@+id/text_view&amp;quot;     android:layout_width=&amp;quot;match_parent&amp;quot;     android:layout_height=&amp;quot;wr">
@@ -240,19 +240,21 @@ android:src=&quot;@drawable/img_1&quot; /&gt;</code></pre></li>
 <h2 id="5-ProgressBar"><a href="#5-ProgressBar" class="headerlink" title="5.ProgressBar"></a>5.ProgressBar</h2><h4 id="ProgressBar用于在界面上添加一个进度条"><a href="#ProgressBar用于在界面上添加一个进度条" class="headerlink" title="ProgressBar用于在界面上添加一个进度条"></a>ProgressBar用于在界面上添加一个进度条</h4><p> &lt;ProgressBar</p>
 <pre><code>android:id=&quot;@+id/progress_bar&quot;
 android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;wrap_content&quot; /&gt;</code></pre><h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><p> public void onClick(View view) {</p>
-<pre><code>    switch (view.getId()){
-        case R.id.button:
-            if(progressBar.getVisibility()==View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }else {
-                progressBar.setVisibility(View.GONE);
+android:layout_height=&quot;wrap_content&quot; /&gt;</code></pre></li>
+</ul>
+<h4 id="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"><a href="#如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了" class="headerlink" title="如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了"></a>如果想让进度条完成加载后消失，可以通过Android控件的可见属性进行修改，所有android控件都有这个属性android：visibility，可选值有三种，visible是可见的，invisible是透明的，而gone则是直接拿掉了</h4><pre><code>public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.button:
+                    if(progressBar.getVisibility()==View.GONE){
+                        progressBar.setVisibility(View.VISIBLE);
+                    }else {
+                        progressBar.setVisibility(View.GONE);
+                    }
+                    break;
+                 default:
+                     break;
             }
-            break;
-         default:
-             break;
-    }
-}</code></pre></li>
+        }</code></pre><ul>
 <li><p>通过getVisbility来获取当前状态，setVisibility则可以修改当前状态</p>
 <h4 id="可以给进度条指定为不同的样式，例如水平进度条"><a href="#可以给进度条指定为不同的样式，例如水平进度条" class="headerlink" title="可以给进度条指定为不同的样式，例如水平进度条"></a>可以给进度条指定为不同的样式，例如水平进度条</h4><p>  &lt;ProgressBar</p>
 <pre><code>android:id=&quot;@+id/progress_bar&quot;
