@@ -6,15 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>CodeLeviatan</title>
+  <title>eclise集成开发环境搭建 | CodeLeviatan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CodeLeviatan">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="eclise集成开发环境搭建">
+<meta property="og:url" content="http://yoursite.com/2019/09/03/eclise集成开发环境搭建/index.html">
 <meta property="og:site_name" content="CodeLeviatan">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-03T13:49:55.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CodeLeviatan">
+<meta name="twitter:title" content="eclise集成开发环境搭建">
   
     <link rel="alternative" href="/atom.xml" title="CodeLeviatan" type="application/atom+xml">
   
@@ -150,170 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Matlab学习日记（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-eclise集成开发环境搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/07/Matlab学习日记（二）/">Matlab学习日记（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/07/Matlab学习日记（二）/" class="archive-article-date">
-  	<time datetime="2019-09-07T06:36:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><ul>
-<li>机器学习是指一套方法或者工具，凭借这套方法和工具，利用历史数据对计算机进行“训练”进而“学习”到<br>某种模式或者规律，并建立预测未来结果的模型<h2 id="K-近邻分类"><a href="#K-近邻分类" class="headerlink" title="K-近邻分类"></a>K-近邻分类</h2><h3 id="T-Properties-VariableNames"><a href="#T-Properties-VariableNames" class="headerlink" title="T.Properties.VariableNames"></a>T.Properties.VariableNames</h3></li>
-<li>可以用于返回表T中的变量名称（即列名）<h3 id="B-categorical-A"><a href="#B-categorical-A" class="headerlink" title="B = categorical(A)"></a>B = categorical(A)</h3></li>
-<li>根据数组 A 创建分类数组。B 的类别是 A 的唯一值且经过排序。<h3 id="B-varfun-func-A-Name-Value"><a href="#B-varfun-func-A-Name-Value" class="headerlink" title="B = varfun(func,A,Name,Value)"></a>B = varfun(func,A,Name,Value)</h3></li>
-<li>分别向表或时间表 A 的每个变量应用函数 func，并在表或时间表 B 中返回值。</li>
-<li>Name,Value指定 ‘OutputFormat’,’uniform’ 或 ‘OutputFormat’,’cell’，则输出 B 的每个组各占一行。如果指定 ‘OutputFormat’,’table’ 或 ‘OutputFormat’,’timetable’，则 func 的输出大小将决定 B 中每个组对应的行数。<h3 id="find-（）"><a href="#find-（）" class="headerlink" title="find （）"></a>find （）</h3></li>
-<li>查找非零元素的索引和值<h3 id="A-1"><a href="#A-1" class="headerlink" title="A(:,1)"></a>A(:,1)</h3></li>
-<li>A(X.Y)表示二维矩阵第X行Y列的元素，X为：则表示所有行，因而A(:,1)就表示第一列所有元素，这是一个列向量<h3 id="C-A-end-1-1"><a href="#C-A-end-1-1" class="headerlink" title=",C=A(:,end:-1:1)"></a>,C=A(:,end:-1:1)</h3></li>
-<li>A（end:-1:1,:）表示将A的行从尾到头排列构成B，也就是B的最后一行对应A的最后一行，以此类推<br>A(:,end:-1:1)则是将A的列从尾到头排列<h3 id="D-dummyvar-group"><a href="#D-dummyvar-group" class="headerlink" title="D = dummyvar(group)"></a>D = dummyvar(group)</h3></li>
-<li>创建虚拟变量，即将数组group每一个量用0和1唯一标识<h3 id="c-cvpartition-n-’HoldOut’-p"><a href="#c-cvpartition-n-’HoldOut’-p" class="headerlink" title="c = cvpartition(n,’HoldOut’,p)"></a>c = cvpartition(n,’HoldOut’,p)</h3></li>
-<li>创建一个随机的非分层分区，用于n观察的保持验证 。该分区将观察分为训练集和测试（或坚持）集。参数 p必须是标量。当0&lt; p&lt; 1， cvpartition随机地选择大约 p*n为测试组观察。当 p为整数时，cvpartition 随机选择p测试集的观测值。默认值p是1/10。</li>
-<li>n为观测的总次数<h3 id="H-height-T"><a href="#H-height-T" class="headerlink" title="H = height(T)"></a>H = height(T)</h3></li>
-<li>返回表 T 中的行数<h3 id="idx-training-c"><a href="#idx-training-c" class="headerlink" title="idx = training(c)"></a>idx = training(c)</h3></li>
-<li>返回逻辑矢量idx的 训练的对象索引c的的cvpartition类型的’holdout’或’resubstitution’。<br>如果c.Type是’holdout’，则idx指定训练集中的观察值。</li>
-<li>可以用此方法获取训练集<h3 id="idx-test-c"><a href="#idx-test-c" class="headerlink" title="idx = test(c)"></a>idx = test(c)</h3></li>
-<li>test(c)返回逻辑矢量idx的 测试为对象的索引c的的cvpartition类型的’holdout’或’resubstitution’。<br>如果c.Type是’holdout’，则idx指定测试集中的观察值。</li>
-<li>用此方法获取测试集</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/Matlab学习日记（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Matlab学习日记（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/06/Matlab学习日记（一）/">Matlab学习日记（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/06/Matlab学习日记（一）/" class="archive-article-date">
-  	<time datetime="2019-09-06T10:56:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="回归分析"><a href="#回归分析" class="headerlink" title="回归分析"></a>回归分析</h1><h2 id="多元回归分析"><a href="#多元回归分析" class="headerlink" title="多元回归分析"></a>多元回归分析</h2><h3 id="b-bint-r-rint-s-regress-Y’-X"><a href="#b-bint-r-rint-s-regress-Y’-X" class="headerlink" title="[b,bint,r,rint,s]=regress(Y’,X);"></a>[b,bint,r,rint,s]=regress(Y’,X);</h3><ul>
-<li>b 回归系数，即得出的各项系数值</li>
-<li>s 统计变量 stats（它包含四个检验统计量：相关系数的平方R^2，假设检验统计量 Ｆ，与 F 对应的概率 p，s^2 的值）、<h3 id="fitnlm-x-y-m2-1-1"><a href="#fitnlm-x-y-m2-1-1" class="headerlink" title="fitnlm(x,y,m2,[1;1])"></a>fitnlm(x,y,m2,[1;1])</h3></li>
-<li>用于进行非线性回归分析</li>
-<li>m2：是估计的方程式</li>
-<li>[1;1]参数的起始值<h2 id="逐步回归"><a href="#逐步回归" class="headerlink" title="逐步回归"></a>逐步回归</h2></li>
-<li>可以使用多元线性回归、多元多项式回归，但也可以考虑使用逐步回归。从逐步回归的原理来看，逐步回归是以上两种回归方法的结合，可以自动使得方程的因子设置最合理。<h3 id="stepwise-X-y"><a href="#stepwise-X-y" class="headerlink" title="stepwise(X,y)"></a>stepwise(X,y)</h3></li>
-<li>对x,y进行逐步回归<br>###stepwise(X,y,inmodel,penter,premove)</li>
-<li>inmodel ：x在原表中的行数</li>
-<li>penter,premove：入口和出口<h2 id="Logistic回归"><a href="#Logistic回归" class="headerlink" title="Logistic回归"></a>Logistic回归</h2></li>
-<li>当 Y 变量只有两个值时（例如，当你面临分类问题时，0-1），您应该考虑使用逻辑回归。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/06/Matlab学习日记（一）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-eclise集成开发环境搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/03/eclise集成开发环境搭建/">eclise集成开发环境搭建</a>
+    <h1 class="article-title" itemprop="name">
+      eclise集成开发环境搭建
     </h1>
   
 
@@ -330,6 +175,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -337,16 +203,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/03/eclise集成开发环境搭建/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/03/eclise集成开发环境搭建/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/09/06/Matlab学习日记（一）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Matlab学习日记（一）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/30/android：进阶/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">android：进阶</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -361,290 +295,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-android：进阶" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/30/android：进阶/">android：进阶</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/30/android：进阶/" class="archive-article-date">
-  	<time datetime="2019-07-30T02:44:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="PackageManager详解"><a href="#PackageManager详解" class="headerlink" title="PackageManager详解"></a>PackageManager详解</h1><p>android系统提供了一个PackageManger管理类，用于管理应用程序包，我们可以通过它获取应用程序信息</p>
-<h2 id="一、PackageManager的功能："><a href="#一、PackageManager的功能：" class="headerlink" title="一、PackageManager的功能："></a>一、PackageManager的功能：</h2><ul>
-<li>1.安装卸载应用</li>
-<li>2.查询permission相关信息</li>
-<li>3.查询Application相关信息</li>
-<li>4.查询已安装应用</li>
-<li>5.增加和删除permission</li>
-<li>6.清除用户数据，缓存代码等<h2 id="二、PackageManager相关类和方法的介绍："><a href="#二、PackageManager相关类和方法的介绍：" class="headerlink" title="二、PackageManager相关类和方法的介绍："></a>二、PackageManager相关类和方法的介绍：</h2><h3 id="1-PackageManager类"><a href="#1-PackageManager类" class="headerlink" title="1.PackageManager类"></a>1.PackageManager类</h3></li>
-<li>获得已安装应用程序的信息，可以通过getPackageManger()方法获得</li>
-<li>public abstract PackageManager getPackageManager()  功能：获得一个PackageManger对象 </li>
-<li>public abstract Drawable getApplicationIcon(String packageName)<br>参数： packageName 包名<br>功能：返回给定包名的图标，否则返回null</li>
-<li>public abstract ApplicationInfo getApplicationInfo(String packageName, int flags)<br>参数：<br>　　packagename 包名<br>　　flags 该ApplicationInfo是此flags标记，通常可以直接赋予常数0即可<br>功能：返回该ApplicationInfo对象</li>
-<li>public abstract List<applicationinfo> getInstalledApplications(int flags)<br>参数：<br>　　flag为一般为GET_UNINSTALLED_PACKAGES，那么此时会返回所有ApplicationInfo。我们可以对ApplicationInfo<br>　　的flags过滤,得到我们需要的。<br>功能：返回给定条件的所有PackageInfo</applicationinfo></li>
-<li>public abstract List<packageinfo> getInstalledPackages(int flags)<br>参数如上<br>功能：返回给定条件的所有PackageInfo</packageinfo></li>
-<li>public abstract ResolveInfo resolveActivity(Intent intent, int flags)<br>参数：<br>　　intent 查寻条件，Activity所配置的action和category<br>　　flags： MATCH_DEFAULT_ONLY     ：Category必须带有CATEGORY_DEFAULT的Activity，才匹配<br>　　　　　　 GET_INTENT_FILTERS     ：匹配Intent条件即可<br>　　　　　　 GET_RESOLVED_FILTER    ：匹配Intent条件即可<br>功能 ：返回给定条件的ResolveInfo对象(本质上是Activity)</li>
-<li>public abstract List<resolveinfo> queryIntentActivities(Intent intent, int flags)<br>参数同上<br>功能 ：返回给定条件的所有ResolveInfo对象(本质上是Activity)，集合对象</resolveinfo></li>
-<li>public abstract ResolveInfo resolveService(Intent intent, int flags)<br>参数同上<br>功能 ：返回给定条件的ResolveInfo对象(本质上是Service)<h2 id="2-ApplicationInfo类-继承自PackageItemInfo类"><a href="#2-ApplicationInfo类-继承自PackageItemInfo类" class="headerlink" title="2.ApplicationInfo类 继承自PackageItemInfo类"></a>2.ApplicationInfo类 继承自PackageItemInfo类</h2></li>
-<li>说明：获取一个特定引用程序中的<application>节点信息</application></li>
-<li>public abstract ResolveInfo resolveService(Intent intent, int flags)<br>参数同上<br>功能 ：返回给定条件的ResolveInfo对象(本质上是Service)</li>
-<li>常用方法继承至PackageItemInfo类中的loadIcon()和loadLabel()<h2 id="3-PackageItemInfo类"><a href="#3-PackageItemInfo类" class="headerlink" title="3.PackageItemInfo类"></a>3.PackageItemInfo类</h2></li>
-<li>AndroidManifest.xml文件中所有节点的基类，提供了这些节点的基本信息：label、icon、 meta-data，它并不直接使用，而是由子类继承然后调用相应方法。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/30/android：进阶/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
   
-    <article id="post-Android-UI" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/27/Android-UI/">Android:UI</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/27/Android-UI/" class="archive-article-date">
-  	<time datetime="2019-07-27T07:00:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="常用的控件使用方法"><a href="#常用的控件使用方法" class="headerlink" title="常用的控件使用方法"></a>常用的控件使用方法</h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/27/Android-UI/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Android-基础-0" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/27/Android-基础-0/">Android:基础</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/27/Android-基础-0/" class="archive-article-date">
-  	<time datetime="2019-07-27T06:14:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Andriod系统架构"><a href="#Andriod系统架构" class="headerlink" title="Andriod系统架构"></a>Andriod系统架构</h1><h2 id="1-Linux内核层"><a href="#1-Linux内核层" class="headerlink" title="1.Linux内核层"></a>1.Linux内核层</h2><ul>
-<li>android是基于Linux内核的，这一层为android设备提供了底层的驱动，如显示驱动，音频驱动，照相机驱动等等<h2 id="2-系统运行库层"><a href="#2-系统运行库层" class="headerlink" title="2.系统运行库层"></a>2.系统运行库层</h2></li>
-<li>这一层通过一些C/C++库来为Android设备的硬件提供了主要的特性支持。如为SQLite库提供了数据库支持，Webkit提供了浏览器内核支持等</li>
-<li>Android运行时库也在这一层，它主要提供一些核心库，能允许开发者使用JAVA语言来编写Android应用
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/27/Android-基础-0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/26/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/26/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-26T02:44:06.704Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/26/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -667,8 +343,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
